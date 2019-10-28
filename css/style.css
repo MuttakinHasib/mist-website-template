@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 65.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: 'Rubik', sans-serif;
+}
+
+/* ***** Utilities ***** */
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+
+.u-margin-bottom-mid {
+  margin-bottom: 6rem;
+}
+
+/* ***** text component ***** */
+.heading-secondary {
+  display: inline-block;
+  font-size: 3.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f36), to(#8128b4));
+  background-image: linear-gradient(to right, #f36, #8128b4);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  letter-spacing: 0.2rem;
+}
+
+.heading-secondary:hover {
+  -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
+          transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+/* ***** BTEB Logo ***** */
+.bteb-logo {
+  width: 105px;
+}
+
+.mist-logo {
+  width: 125px;
+}
+
+#menu-bar {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  -webkit-box-shadow: 0 1rem 4rem 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1rem 4rem 0 rgba(0, 0, 0, 0.25);
+}
+
+#menu-bar .text-logo {
+  font-size: 2rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Righteous', cursive;
+}
+
+#menu-bar a {
+  padding-right: 1.3rem;
+  padding-left: 1.3rem;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  white-space: nowrap;
+}
+
+#menu-bar ul li {
+  position: relative;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#menu-bar ul li:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#menu-bar ul li::before {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: 0;
+  width: 100%;
+  height: 0.18rem;
+  background: #f36;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+/* ***** Landing Section ***** */
+.landing {
+  padding: 6rem 0;
+}
+
+.landing ul li {
+  font-size: 1.3rem;
+}
+
+.landing ul li:first-child {
+  font-size: 2rem;
+}
+
+.landing ul li:not(:first-child) {
+  position: relative;
+  padding-left: 3rem !important;
+}
+
+.landing ul li:not(:first-child)::before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 5%;
+  content: "\25aa";
+  margin-right: .5rem;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
