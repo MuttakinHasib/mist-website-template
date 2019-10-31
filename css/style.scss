@@ -1,3 +1,25 @@
+@font-face {
+    src: url(../fonts/Kalpurush.ttf);
+    font-family: kalpurush;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* colors */
+$color-whit-gray:#fff;
+$color-gray:#ddd;
+$color-heading-gradient:linear-gradient(to right,
+    #f36,
+    #8128b4);
+
+/*     {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+} */
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +46,34 @@ body {
     margin-bottom: 6rem;
 }
 
+.u-margin-bottom-small {
+    margin-bottom: 2rem;
+}
+
+.bd-font {
+    font-family: kalpurush;
+}
+
+.sp {
+    padding: 6rem 0;
+
+}
+
+.text-size-mid {
+
+    font-size: 1.5rem !important;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.honor {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+
+}
+
 /* ***** text component ***** */
 
 .heading-secondary {
@@ -31,9 +81,26 @@ body {
     font-size: 3.7rem;
     text-transform: uppercase;
     font-weight: 700;
-    background-image: linear-gradient(to right,
-            #f36,
-            #8128b4);
+    background-image: $color-heading-gradient;
+    -webkit-background-clip: text;
+    color:
+        transparent;
+    transition: all .3s;
+    letter-spacing: 0.2rem;
+
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+    }
+}
+
+.heading-mid {
+    display: inline-block;
+    font-size: 2.7rem;
+    text-transform: capitalize;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    background-image: $color-heading-gradient;
     -webkit-background-clip: text;
     color:
         transparent;
@@ -56,12 +123,22 @@ body {
     width: 125px;
 }
 
+.brand-logo {
+    img {
+        width: 35px;
+    }
+}
+
+// .title-shadow {
+//     text-shadow: 0.2px 0.2px 3px #00A54F;
+// }
+
 #menu-bar {
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 999;
-    box-shadow: 0 1rem 4rem 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1rem 4rem 0 rgba(0, 0, 0, 0.05);
 
     .text-logo {
         font-size: 2rem;
@@ -114,8 +191,6 @@ body {
 /* ***** Landing Section ***** */
 
 .landing {
-    padding: 6rem 0;
-
     ul {
 
         li {
@@ -129,6 +204,7 @@ body {
         li:not(:first-child) {
             position: relative;
             padding-left: 3rem !important;
+
             &::before {
                 position: absolute;
                 top: 50%;
@@ -139,6 +215,20 @@ body {
                 font-size: 2rem;
             }
 
+        }
+    }
+}
+
+/* ***** Director Section ***** */
+
+.director {
+    background: $color-whit-gray;
+
+    .card-body {
+        p {
+            font-size: 1.5rem;
+            font-family: 'Lato', sans-serif;
+            opacity: .7;
         }
     }
 }
