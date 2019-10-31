@@ -5,6 +5,11 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: FiraCodeMedium;
+  src: url(../fonts/FiraCode-Medium.ttf);
+}
+
 /* colors */
 /*     {
     font-family: 'Roboto', sans-serif;
@@ -20,9 +25,11 @@
 
 html {
   font-size: 65.5%;
+  scroll-behavior: smooth;
 }
 
 body {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   background: #fff;
@@ -62,6 +69,17 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
+.animated-text {
+  font-family: FiraCodeMedium;
+  -webkit-font-feature-settings: "calt" 1;
+          font-feature-settings: "calt" 1;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  word-break: break-all;
+  display: table;
+  font-weight: 500;
+}
+
 /* ***** text component ***** */
 .heading-secondary {
   display: inline-block;
@@ -81,6 +99,10 @@ body {
   -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
           transform: skewY(2deg) skewX(15deg) scale(1.1);
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.bd-font-spacing {
+  left: 0.1rem;
 }
 
 .heading-mid {
@@ -207,5 +229,11 @@ body {
   font-size: 1.5rem;
   font-family: 'Lato', sans-serif;
   opacity: .7;
+}
+
+/* ***** Courses ***** */
+.courses .single-item {
+  border-radius: 10px;
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */
