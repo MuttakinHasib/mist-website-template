@@ -12,7 +12,7 @@
 
 /* colors */
 $color-whit-gray:#fff;
-$color-gray:#ddd;
+$color-gray:#f2f2f2;
 $color-heading-gradient:linear-gradient(to right,
     #f36,
     #8128b4);
@@ -257,6 +257,7 @@ body {
 /* ***** Courses ***** */
 
 .courses {
+    background: $color-gray;
     .dpt-slider {
         .single-item {
             margin: 1rem;
@@ -265,14 +266,14 @@ body {
     }
 
     .single-item {
-        // background: $color-heading-gradient;
-
-        // width: 300px;
-        border-radius: 10px;
         overflow: hidden;
         // box-shadow: 0 0 2.5rem 0 rgba(0, 0, 0, 0.5);
+        transition: all .3s ease-in-out;
+        background: $color-gray;
+        
 
         &:hover {
+            background: #fff;
             .dpt-img {
                 &::before {
                     transform: scale(1);

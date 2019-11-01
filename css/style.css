@@ -232,13 +232,23 @@ body {
 }
 
 /* ***** Courses ***** */
+.courses {
+  background: #f2f2f2;
+}
+
 .courses .dpt-slider .single-item {
   margin: 1rem;
 }
 
 .courses .single-item {
-  border-radius: 10px;
   overflow: hidden;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background: #f2f2f2;
+}
+
+.courses .single-item:hover {
+  background: #fff;
 }
 
 .courses .single-item:hover .dpt-img::before {
@@ -330,7 +340,7 @@ footer .get-in-touch .icon svg {
   display: inline-block;
   line-height: 5rem;
   text-align: center;
-  color: #ddd;
+  color: #f2f2f2;
   font-size: 2rem;
   margin-right: 1rem;
 }
