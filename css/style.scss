@@ -16,6 +16,8 @@ $color-gray:#f2f2f2;
 $color-heading-gradient:linear-gradient(to right,
     #f36,
     #8128b4);
+$color-pink:#f36;
+$color-purple:#8128b4;
 
 /*     {
     font-family: 'Roboto', sans-serif;
@@ -41,7 +43,9 @@ body {
     margin: 0;
     padding: 0;
     background: #fff;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
 }
 
 /* ***** Utilities ***** */
@@ -62,8 +66,46 @@ body {
 }
 
 .sp {
-    padding: 6rem 0;
+    padding: 7rem 0;
 
+}
+
+.shadow-drop-2-center:hover {
+    -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation shadow-drop-2-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes shadow-drop-2-center {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        -webkit-transform: translateZ(50px);
+        transform: translateZ(50px);
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+}
+
+@keyframes shadow-drop-2-center {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        -webkit-transform: translateZ(50px);
+        transform: translateZ(50px);
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
 }
 
 .text-size-mid {
@@ -117,7 +159,7 @@ body {
 
 .heading-mid {
     display: inline-block;
-    font-size: 2.7rem;
+    font-size: 3rem;
     text-transform: capitalize;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
@@ -258,6 +300,7 @@ body {
 
 .courses {
     background: $color-gray;
+
     .dpt-slider {
         .single-item {
             margin: 1rem;
@@ -270,10 +313,11 @@ body {
         // box-shadow: 0 0 2.5rem 0 rgba(0, 0, 0, 0.5);
         transition: all .3s ease-in-out;
         background: $color-gray;
-        
+
 
         &:hover {
             background: #fff;
+
             .dpt-img {
                 &::before {
                     transform: scale(1);
@@ -406,6 +450,101 @@ footer {
     .copyright {
         p {
             font-size: 1.3rem;
+        }
+    }
+}
+
+/* ********************* About  ********************** */
+.institute-name {
+    font-family: 'Rubik', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+}
+
+.top-header {
+    background: linear-gradient(135deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.8)), url(../img/sea.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+
+    h2 {
+        display: inline-block;
+        padding-bottom: .5rem;
+        font-size: 3rem;
+        letter-spacing: 1.5;
+    }
+
+}
+
+/* ********************* Administration  ********************** */
+
+.administration {
+    .single-hero {
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            background: #fff;
+        }
+
+        .hero-name {
+            h1 {
+                font-family: 'Roboto', sans-serif;
+                font-size: 2rem;
+                font-weight: 600;
+                background-image: $color-heading-gradient;
+                -webkit-background-clip: text;
+                color:
+                    transparent;
+            }
+        }
+
+        .hero-info {
+            h3 {
+                // font-size: 1.6rem;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 1.3rem;
+                font-family: 'Lato', sans-serif;
+                opacity: .7;
+
+            }
+        }
+    }
+}
+
+/* ********************* Admission  ********************** */
+
+.admission {
+    table {
+
+
+        th {
+            font-family: 'Roboto', sans-serif;
+
+            background-image: $color-heading-gradient;
+            -webkit-background-clip: text;
+            color:
+                transparent;
+            font-size: 1.8rem;
+            letter-spacing: .1rem;
+            font-weight: 600;
+        }
+
+        td {
+            font-family: FiraCodeMedium;
+            font-feature-settings: "calt"1;
+            text-rendering: optimizeLegibility;
+            white-space: nowrap;
+            word-break: break-all;
+            font-weight: 500;
+            font-size: 1.4rem;
+            opacity: .8;
+            font-weight: 400;
         }
     }
 }
