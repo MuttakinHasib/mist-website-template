@@ -41,11 +41,12 @@ html {
 body {
     scroll-behavior: smooth;
     margin: 0;
+    width: 100%;
     padding: 0;
     background: #fff;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 /* ***** Utilities ***** */
@@ -468,7 +469,8 @@ footer {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    width: 100%;
+    width:100%;
+    overflow-x: hidden;
 
     h2 {
         display: inline-block;
