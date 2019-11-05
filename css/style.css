@@ -122,7 +122,31 @@ body {
   font-weight: 500;
 }
 
+.tab-content {
+  display: none;
+}
+
 /* ***** text component ***** */
+.text-primary-gradient {
+  background-image: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  display: inline-block;
+  font-size: 3.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  letter-spacing: 0.2rem;
+  font-family: FiraCodeMedium;
+  -webkit-font-feature-settings: "calt" 1;
+          font-feature-settings: "calt" 1;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  word-break: break-all;
+}
+
 .heading-secondary {
   display: inline-block;
   font-size: 3.7rem;
@@ -135,12 +159,10 @@ body {
   -webkit-transition: all .3s;
   transition: all .3s;
   letter-spacing: 0.2rem;
-}
-
-.heading-secondary:hover {
-  -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
-          transform: skewY(2deg) skewX(15deg) scale(1.1);
-  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+  /* &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+    } */
 }
 
 .bd-font-spacing {
@@ -160,12 +182,6 @@ body {
   -webkit-transition: all .3s;
   transition: all .3s;
   letter-spacing: 0.2rem;
-}
-
-.heading-mid:hover {
-  -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
-          transform: skewY(2deg) skewX(15deg) scale(1.1);
-  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 /* ***** BTEB Logo ***** */
@@ -189,18 +205,6 @@ body {
   z-index: 999;
   -webkit-box-shadow: 0 1rem 4rem 0 rgba(0, 0, 0, 0.05);
           box-shadow: 0 1rem 4rem 0 rgba(0, 0, 0, 0.05);
-}
-
-#menu-bar .text-logo {
-  font-size: 2rem;
-  background-image: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-family: 'Righteous', cursive;
 }
 
 #menu-bar a {
@@ -434,17 +438,37 @@ footer .copyright p {
   letter-spacing: 1.5;
 }
 
+.cmt-top-header {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../img/cmt-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.cmt-top-header h2 {
+  display: inline-block;
+  padding-bottom: .5rem;
+  font-size: 3rem;
+  letter-spacing: 1.5;
+}
+
 /* ********************* Administration  ********************** */
-.administration .single-hero {
+.administration .single-hero,
+.department .single-hero {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
-.administration .single-hero:hover {
+.administration .single-hero:hover,
+.department .single-hero:hover {
   background: #fff;
 }
 
-.administration .single-hero .hero-name h1 {
+.administration .single-hero .hero-name h1,
+.department .single-hero .hero-name h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   font-weight: 600;
@@ -454,11 +478,13 @@ footer .copyright p {
   color: transparent;
 }
 
-.administration .single-hero .hero-info h3 {
+.administration .single-hero .hero-info h3,
+.department .single-hero .hero-info h3 {
   font-weight: 600;
 }
 
-.administration .single-hero .hero-info p {
+.administration .single-hero .hero-info p,
+.department .single-hero .hero-info p {
   font-size: 1.3rem;
   font-family: 'Lato', sans-serif;
   opacity: .7;

@@ -134,7 +134,32 @@ body {
     font-weight: 500;
 }
 
+.tab-content {
+    display: none;
+}
+
 /* ***** text component ***** */
+.text-primary-gradient {
+    // background: linear-gradient(135deg, #f36, lightgreen);
+    background-image: linear-gradient(to right,
+            #7ed56f,
+            #28b485);
+    display: inline-block;
+    font-size: 3.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    -webkit-background-clip: text;
+    color:
+        transparent;
+    transition: all .3s;
+    letter-spacing: 0.2rem;
+    font-family: FiraCodeMedium;
+    font-feature-settings: "calt"1;
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    word-break: break-all;
+
+}
 
 .heading-secondary {
     display: inline-block;
@@ -148,10 +173,11 @@ body {
     transition: all .3s;
     letter-spacing: 0.2rem;
 
-    &:hover {
+    /* &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
         text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
-    }
+    } */
+
 }
 
 .bd-font-spacing {
@@ -171,10 +197,10 @@ body {
     transition: all .3s;
     letter-spacing: 0.2rem;
 
-    &:hover {
-        transform: skewY(2deg) skewX(15deg) scale(1.1);
-        text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
-    }
+    // &:hover {
+    //     transform: skewY(2deg) skewX(15deg) scale(1.1);
+    //     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+    // }
 }
 
 /* ***** BTEB Logo ***** */
@@ -204,20 +230,7 @@ body {
     z-index: 999;
     box-shadow: 0 1rem 4rem 0 rgba(0, 0, 0, 0.05);
 
-    .text-logo {
-        font-size: 2rem;
-        // background: linear-gradient(135deg, #f36, lightgreen);
-        background-image: linear-gradient(to right,
-                #7ed56f,
-                #28b485);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-        letter-spacing: 1px;
-        font-family: 'Righteous', cursive;
 
-    }
 
     a {
         padding-right: 1.3rem;
@@ -469,7 +482,25 @@ footer {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    width:100%;
+    width: 100%;
+    overflow-x: hidden;
+
+    h2 {
+        display: inline-block;
+        padding-bottom: .5rem;
+        font-size: 3rem;
+        letter-spacing: 1.5;
+    }
+
+}
+
+.cmt-top-header {
+    background: linear-gradient(135deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.8)), url(../img/cmt-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
     overflow-x: hidden;
 
     h2 {
@@ -483,7 +514,8 @@ footer {
 
 /* ********************* Administration  ********************** */
 
-.administration {
+.administration,
+.department {
     .single-hero {
         transition: all .3s ease-in-out;
 
