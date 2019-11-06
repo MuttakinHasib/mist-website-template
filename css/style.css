@@ -521,7 +521,7 @@ footer .copyright h2 {
 }
 
 .gallery-top-header {
-  background: linear-gradient(135deg, #0071a5bd -10%, #d8255ec5 75%), url(../img/gallery-banner.jpg);
+  background: linear-gradient(135deg, #0071a5bd -10%, #d8255ec5 75%), url(../img/gallery-banner-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
