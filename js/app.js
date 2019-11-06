@@ -39,8 +39,24 @@ $(document).ready(function () {
             }
         }
     });
+
+    $('.zoom').magnificPopup({
+
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
+
+    var containerEl = document.querySelector('.gallery-item');
+
+    var mixer = mixitup(containerEl);
 });
 
+// Active gallery button
+$(document).on('click', '.control button', function () {
+    $(this).addClass('btn-gallery-active').siblings().removeClass('btn-gallery-active')
+});
 
 // tab system
 

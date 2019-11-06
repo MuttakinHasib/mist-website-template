@@ -39,6 +39,32 @@ body {
 }
 
 /* ***** Utilities ***** */
+.btn-gallery {
+  color: #0b566f;
+  background: #fff;
+  border: 2px solid #0b566f;
+  padding: 8px 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: .4rem !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.btn-gallery:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.btn-gallery-active {
+  color: #ffffff;
+  background-color: #149dcc;
+  border-color: #149dcc;
+}
+
 .u-margin-bottom-big {
   margin-bottom: 80px;
 }
@@ -99,9 +125,15 @@ body {
   }
 }
 
+.teachers .single-hero img {
+  display: block;
+  margin: auto;
+}
+
 .text-size-mid {
   font-size: 17px !important;
   font-weight: 400;
+  opacity: .8;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -147,7 +179,6 @@ p {
   -webkit-font-feature-settings: "calt" 1;
           font-feature-settings: "calt" 1;
   text-rendering: optimizeLegibility;
-  white-space: nowrap;
   word-break: break-all;
 }
 
@@ -167,6 +198,28 @@ p {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
         text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
     } */
+}
+
+.hero-name h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f36), to(#8128b4));
+  background-image: linear-gradient(to right, #f36, #8128b4);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero-info h3 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.hero-info p {
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  opacity: .6;
+  font-weight: 600;
 }
 
 .bd-font-spacing {
@@ -467,6 +520,24 @@ footer .copyright h2 {
   letter-spacing: 1.5;
 }
 
+.gallery-top-header {
+  background: linear-gradient(135deg, #0071a5bd -10%, #d8255ec5 75%), url(../img/gallery-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 6rem 0;
+}
+
+.gallery-top-header h2 {
+  display: inline-block;
+  padding-bottom: .5rem;
+  font-size: 30px;
+  letter-spacing: 1.5;
+}
+
 .cmt-top-header {
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../img/cmt-banner.jpg);
   background-repeat: no-repeat;
@@ -507,19 +578,6 @@ footer .copyright h2 {
   color: transparent;
 }
 
-.administration .single-hero .hero-info h3,
-.department .single-hero .hero-info h3 {
-  font-weight: 600;
-  font-size: 20px;
-}
-
-.administration .single-hero .hero-info p,
-.department .single-hero .hero-info p {
-  font-size: 16px;
-  font-family: 'Lato', sans-serif;
-  opacity: .7;
-}
-
 /* ********************* Admission  ********************** */
 .admission table th {
   font-family: 'Roboto', sans-serif;
@@ -543,5 +601,88 @@ footer .copyright h2 {
   font-size: 14px;
   opacity: .8;
   font-weight: 400;
+}
+
+.admission-details .ca-hero .hero-img {
+  margin: auto;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid #ddd;
+}
+
+.admission-details .ca-hero .hero-img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ***** Gallery ***** */
+.gallery .gallery-img {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.gallery .gallery-img img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.gallery .gallery-img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: #000;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  z-index: 2;
+}
+
+.gallery .gallery-img:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.gallery .gallery-img:hover .item-zoom {
+  opacity: 1 !important;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  visibility: visible;
+}
+
+.gallery .gallery-img:hover::before {
+  opacity: .6 !important;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.gallery .gallery-img .item-zoom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  z-index: 3;
+}
+
+.gallery .gallery-img .item-zoom svg {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
