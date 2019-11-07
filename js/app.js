@@ -67,6 +67,10 @@ $(document).ready(function() {
   var mixer = mixitup(containerEl);
 });
 
+// Job-cell data table
+
+$('#job-cell,#industry-list').dataTable();
+
 // Active gallery button
 $(document).on("click", ".control button", function() {
   $(this)

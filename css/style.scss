@@ -56,6 +56,18 @@ body {
 }
 
 /* ***** Utilities ***** */
+.table-responsive {
+    .row {
+        padding: 1rem !important;
+    }
+}
+
+table {
+    th {
+        vertical-align: middle !important;
+    }
+}
+
 .btn-gallery {
     color: #0b566f;
     background: #fff;
@@ -888,8 +900,11 @@ footer {
             transition: all .3s ease-in-out;
 
             &:focus {
+                background: #fff;
                 outline: 0;
-                box-shadow: 0 0 0 5px rgba(87, 184, 70, 0.205);
+                color: #f36;
+
+                box-shadow: 0 0 0 3px rgba(87, 184, 70, 0.274);
             }
         }
 
