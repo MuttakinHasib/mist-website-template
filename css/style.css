@@ -258,7 +258,7 @@ p {
 }
 
 .animated-text {
-  font-family: FiraCodeMedium;
+  font-family: 'Fira Code', monospace;
   -webkit-font-feature-settings: "calt" 1;
           font-feature-settings: "calt" 1;
   text-rendering: optimizeLegibility;
@@ -285,7 +285,7 @@ p {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   letter-spacing: 2px;
-  font-family: FiraCodeMedium;
+  font-family: 'Fira Code', monospace;
   -webkit-font-feature-settings: "calt" 1;
           font-feature-settings: "calt" 1;
   text-rendering: optimizeLegibility;
@@ -761,7 +761,7 @@ footer .copyright h2 {
 }
 
 .admission table td {
-  font-family: FiraCodeMedium;
+  font-family: 'Fira Code', monospace;
   -webkit-font-feature-settings: "calt" 1;
           font-feature-settings: "calt" 1;
   text-rendering: optimizeLegibility;

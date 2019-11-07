@@ -276,7 +276,8 @@ p {
 }
 
 .animated-text {
-    font-family: FiraCodeMedium;
+    // font-family: FiraCodeMedium;
+    font-family: 'Fira Code', monospace;
     font-feature-settings: "calt"1;
     text-rendering: optimizeLegibility;
     white-space: nowrap;
@@ -301,7 +302,8 @@ p {
     color: transparent;
     transition: all 0.3s;
     letter-spacing: 2px;
-    font-family: FiraCodeMedium;
+    // font-family: FiraCodeMedium;
+    font-family: 'Fira Code', monospace;
     font-feature-settings: "calt"1;
     text-rendering: optimizeLegibility;
     // white-space: nowrap;
@@ -819,7 +821,8 @@ footer {
         }
 
         td {
-            font-family: FiraCodeMedium;
+            // font-family: FiraCodeMedium;
+            font-family: 'Fira Code', monospace;
             font-feature-settings: "calt"1;
             text-rendering: optimizeLegibility;
             white-space: nowrap;
