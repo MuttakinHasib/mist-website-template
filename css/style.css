@@ -5,24 +5,16 @@
  *
  *
 */
+/* Fonts */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700|Poppins:100,300,400,500,600,700,800&display=swap");
-@font-face {
-  src: url(../fonts/Kalpurush.ttf);
-  font-family: kalpurush;
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: FiraCodeMedium;
-  src: url(../fonts/FiraCode-Medium.ttf);
-}
-
+@import url("https://fonts.maateen.me/kalpurush/font.css");
 /* colors */
 /*     {
     font-family: 'Roboto', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Lato', sans-serif;
+    font-family: 'Kalpurush', sans-serif;
+    font-family: 'Fira Code', monospace;
 } */
 * {
   margin: 0;
@@ -33,10 +25,12 @@
 
 html {
   scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
 }
 
 body {
   scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
   margin: 0;
   width: 100%;
   padding: 0;
@@ -57,7 +51,7 @@ body {
   background: #f36;
   border-radius: 50%;
   opacity: 0;
-  visibility: visible;
+  visibility: hidden;
   pointer-events: none;
 }
 
@@ -194,7 +188,7 @@ table th {
 }
 
 .bd-font {
-  font-family: kalpurush;
+  font-family: 'Kalpurush', sans-serif;
 }
 
 .sp {
@@ -886,7 +880,7 @@ footer .copyright h2 {
   padding: 8px 25px;
   border-radius: 5px;
   border: none;
-  background: #E6E6E6;
+  background: #f1f1f1;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }

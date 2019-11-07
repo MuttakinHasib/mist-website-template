@@ -6,20 +6,20 @@
  *
 */
 /* Fonts */
-@font-face {
-    src: url(../fonts/Kalpurush.ttf);
-    font-family: kalpurush;
-    font-style: normal;
-    font-weight: 400;
-}
+// @font-face {
+//     src: url(../fonts/Kalpurush.ttf);
+//     font-family: kalpurush;
+//     font-style: normal;
+//     font-weight: 400;
+// }
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700|Poppins:100,300,400,500,600,700,800&display=swap');
 @import url('https://fonts.maateen.me/kalpurush/font.css');
 
-@font-face {
-    font-family: FiraCodeMedium;
-    src: url(../fonts/FiraCode-Medium.ttf);
-}
+// @font-face {
+//     font-family: FiraCodeMedium;
+//     src: url(../fonts/FiraCode-Medium.ttf);
+// }
 
 /* colors */
 $color-whit-gray: #fff;
@@ -32,6 +32,8 @@ $color-purple: #8128b4;
     font-family: 'Roboto', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Lato', sans-serif;
+    font-family: 'Kalpurush', sans-serif;
+    font-family: 'Fira Code', monospace;
 } */
 
 * {
@@ -203,7 +205,8 @@ table {
 }
 
 .bd-font {
-    font-family: kalpurush;
+    // font-family: kalpurush;
+    font-family: 'Kalpurush', sans-serif;
 }
 
 .sp {
