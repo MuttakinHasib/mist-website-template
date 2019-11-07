@@ -15,6 +15,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700|Poppins:100,300,400,500,600,700,800&display=swap');
 @import url('https://fonts.maateen.me/kalpurush/font.css');
+
 @font-face {
     font-family: FiraCodeMedium;
     src: url(../fonts/FiraCode-Medium.ttf);
@@ -42,10 +43,13 @@ $color-purple: #8128b4;
 html {
     // font-size: 65.5%;
     scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+
 }
 
 body {
     scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
     margin: 0;
     width: 100%;
     padding: 0;
@@ -933,7 +937,7 @@ footer {
             padding: 8px 25px;
             border-radius: 5px;
             border: none;
-            background: #E6E6E6;
+            background: #f1f1f1;
             transition: all .3s ease-in-out;
 
             &:focus {
