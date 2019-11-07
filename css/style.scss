@@ -6,19 +6,19 @@
  *
 */
 
-@font-face {
-    src: url(../fonts/Kalpurush.ttf);
-    font-family: kalpurush;
-    font-style: normal;
-    font-weight: 400;
-}
+// @font-face {
+//     src: url(../fonts/Kalpurush.ttf);
+//     font-family: kalpurush;
+//     font-style: normal;
+//     font-weight: 400;
+// }
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700|Poppins:100,300,400,500,600,700,800&display=swap');
-
-@font-face {
-    font-family: FiraCodeMedium;
-    src: url(../fonts/FiraCode-Medium.ttf);
-}
+@import url('https://fonts.maateen.me/kalpurush/font.css');
+// @font-face {
+//     font-family: FiraCodeMedium;
+//     src: url(../fonts/FiraCode-Medium.ttf);
+// }
 
 /* colors */
 $color-whit-gray: #fff;
@@ -53,6 +53,43 @@ body {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     /* // overflow-x: hidden; */
+}
+
+.scroll-bar {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 999;
+    background: $color-pink;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    .scroll-top {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        transition: all .3s ease-in-out;
+        color: #fff;
+
+        &:focus {
+            border-radius: 50%;
+            outline: 0;
+            box-shadow: 0 0 0 5px rgba(255, 51, 102, 0.274) !important;
+        }
+
+        &:hover {
+            text-decoration: none;
+
+        }
+    }
 }
 
 /* ***** Utilities ***** */
