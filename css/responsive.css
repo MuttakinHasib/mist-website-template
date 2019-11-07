@@ -1,12 +1,15 @@
 @media screen and (max-width: 600px) {
   .heading-secondary {
-    font-size: 2.7rem !important;
+    font-size: 27px !important;
   }
   .heading-mid {
-    font-size: 2.3rem !important;
+    font-size: 23px !important;
   }
   .title {
-    padding: 0 1.5rem;
+    padding: 0 15px;
+  }
+  .contact input, .contact textarea {
+    width: 100% !important;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
