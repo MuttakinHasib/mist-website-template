@@ -4,7 +4,9 @@ $(window).scroll(function() {
   let winScroll = $(this).scrollTop();
 
   $(".cmt-top-header,.notices-top-header,.gallery-top-header").css({
-    backgroundPositionY: "-" + Math.floor((winScroll / 1.5) * 2) + "px"
+    // backgroundPositionY: "-" + Math.floor((winScroll / 1.5) * 2) + "px"
+    backgroundPositionY: Math.floor(winScroll / 10) + "px"
+
   });
   $(".top-header").css({
     backgroundPositionY: Math.floor(winScroll / 10) + "px"
