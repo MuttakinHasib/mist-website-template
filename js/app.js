@@ -26,6 +26,20 @@ $(window).scroll(function() {
 });
 
 $(document).ready(function() {
+    // smooth scroll
+    let scrollLink = $(".scroll-top");
+    scrollLink.click(function(e) {
+        e.preventDefault();
+        $("body,html").animate(
+            {
+                scrollTop: $(this.hash).offset().top
+            },
+            1000
+        );
+    }); 
+
+    // Slider
+
     $(".slider").owlCarousel({
         items: 1,
         loop: true,
@@ -66,7 +80,7 @@ $(document).ready(function() {
             }
         }
     });
-
+    // Popup Img
     $(".zoom").magnificPopup({
         type: "image",
         gallery: {
@@ -88,7 +102,7 @@ $(document).on("click", ".control button", function() {
 
 // tab system
 
-const tabLink = document.querySelectorAll(".tab-link");
+/* const tabLink = document.querySelectorAll(".tab-link");
 const tabContent = document.querySelectorAll(".tab-content");
 
 tabLink.forEach(item => {
@@ -103,7 +117,7 @@ function showPanel(index) {
     });
 
     tabContent[index].style.display = "block";
-}
+} */
 
 // Job-cell data table
 
