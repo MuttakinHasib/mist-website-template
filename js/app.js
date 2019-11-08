@@ -13,16 +13,18 @@ $(window).scroll(function() {
 
     // Scroll Top Bar
 
-    if (winScroll > 300) {
+    if (winScroll >= 300) {
         $(".scroll-bar").css({
             opacity: "1",
             visibility: "visible",
             pointerEvents: "all"
         });
+
         $(".scroll-bar").fadeIn("slow");
     } else {
         $(".scroll-bar").fadeOut("slow");
     }
+
 });
 
 $(document).ready(function() {
@@ -32,11 +34,11 @@ $(document).ready(function() {
         e.preventDefault();
         $("body,html").animate(
             {
-                scrollTop: $(this.hash).offset().top
+                scrollTop: $(this.hash).offset().top - 100
             },
             1000
         );
-    }); 
+    });
 
     // Slider
 
