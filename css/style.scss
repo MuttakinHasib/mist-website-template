@@ -99,6 +99,7 @@ body {
 }
 
 /* ***** Utilities ***** */
+
 .table-responsive {
     .row {
         padding: 1rem !important;
@@ -407,7 +408,7 @@ p {
 
 #menu-bar {
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 999;
     box-shadow: 0 1rem 4rem 0 rgba(0, 0, 0, 0.05);
@@ -445,10 +446,10 @@ p {
     }
 }
 
-/* 
+
 header {
-  // padding-top: 5rem !important;
-} */
+  padding-top: 5.5rem !important;
+}
 
 /* ***** Landing Section ***** */
 
@@ -497,6 +498,14 @@ header {
 /* ***** Courses ***** */
 
 .courses {
+    a {
+        color: #000 !important;
+
+        &:hover {
+            text-decoration: none !important;
+        }
+    }
+
     background: $color-gray;
 
     .dpt-slider {
@@ -565,8 +574,8 @@ footer {
 
     // color: rgba(255, 255, 255, 0.3) !important;
     h1 {
-        letter-spacing: 3px;
-        font-size: 25px;
+        letter-spacing: 1px;
+        font-size: 20px;
         margin-bottom: 16px !important;
     }
 
@@ -589,11 +598,12 @@ footer {
             margin-right: 1.5rem;
             font-size: 20px;
             transition: all 0.3s ease-in-out;
+            color: #fff;
+
 
             &:hover {
                 // background: rgba(255,255,255,.3);
                 background: #f56;
-                color: #fff;
             }
         }
     }
@@ -605,11 +615,11 @@ footer {
 
         h1 {
             letter-spacing: 3px;
-            font-size: 25px;
+            font-size: 20px;
         }
 
         p {
-            font-size: 18px;
+            font-size: 16px;
             margin-bottom: 0;
             font-weight: 300;
         }
@@ -636,7 +646,7 @@ footer {
         .links {
             a {
                 color: #fff;
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 300;
                 line-height: 23px;
                 transition: all 0.2s ease-in-out;
@@ -710,6 +720,7 @@ footer {
     background-attachment: fixed;
     width: 100%;
     overflow-x: hidden;
+    padding-top: 9.5rem !important;
 
     h2 {
         display: inline-block;
@@ -720,6 +731,8 @@ footer {
 }
 
 .gallery-top-header {
+    padding-top: 11.5rem !important;
+
     background: linear-gradient(135deg, #0071a5bd -10%, #d8255ec5 75%),
         url(../img/gallery-banner-min.jpg);
     background-repeat: no-repeat;
@@ -740,6 +753,7 @@ footer {
 }
 
 .cmt-top-header {
+    padding-top: 12rem !important;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
         url(../img/cmt-banner.jpg);
     background-repeat: no-repeat;
@@ -748,7 +762,7 @@ footer {
     background-attachment: fixed;
     width: 100%;
     overflow-x: hidden;
-    padding: 8rem 0 !important;
+    padding-bottom: 8rem !important;
     font-family: "Poppins", sans-serif;
 
     h2 {
@@ -760,6 +774,8 @@ footer {
 }
 
 .notices-top-header {
+    padding-top: 11.5rem !important;
+
     background: linear-gradient(-135deg, #0071a5bd -10%, #d8255ec5 75%),
         url(../img/notices.jpg);
     background-repeat: no-repeat;
@@ -768,7 +784,7 @@ footer {
     background-attachment: fixed;
     width: 100%;
     overflow-x: hidden;
-    padding: 8rem 0 !important;
+    padding-bottom: 8rem !important;
     font-family: "Poppins", sans-serif;
 
     h2 {
@@ -921,6 +937,7 @@ footer {
 
 /* ***** Contact ***** */
 .contact {
+    padding-top: 9rem;
     background: $color-gray;
     // background: linear-gradient(135deg,#f36,tomato);
     // background: #009AFF;

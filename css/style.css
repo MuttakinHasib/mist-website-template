@@ -375,8 +375,7 @@ p {
 
 #menu-bar {
   width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 999;
   -webkit-box-shadow: 0 1rem 4rem 0 rgba(0, 0, 0, 0.05);
@@ -417,10 +416,10 @@ p {
   transition: all 0.3s ease-in-out;
 }
 
-/* 
 header {
-  // padding-top: 5rem !important;
-} */
+  padding-top: 5.5rem !important;
+}
+
 /* ***** Landing Section ***** */
 .landing ul li {
   font-size: 15px;
@@ -461,6 +460,14 @@ header {
 /* ***** Courses ***** */
 .courses {
   background: #f2f2f2;
+}
+
+.courses a {
+  color: #000 !important;
+}
+
+.courses a:hover {
+  text-decoration: none !important;
 }
 
 .courses .dpt-slider .single-item {
@@ -526,8 +533,8 @@ footer {
 }
 
 footer h1 {
-  letter-spacing: 3px;
-  font-size: 25px;
+  letter-spacing: 1px;
+  font-size: 20px;
   margin-bottom: 16px !important;
 }
 
@@ -550,11 +557,11 @@ footer .social-icon-link a {
   font-size: 20px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  color: #fff;
 }
 
 footer .social-icon-link a:hover {
   background: #f56;
-  color: #fff;
 }
 
 footer .get-in-touch .gt {
@@ -563,11 +570,11 @@ footer .get-in-touch .gt {
 
 footer .get-in-touch h1 {
   letter-spacing: 3px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 footer .get-in-touch p {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 0;
   font-weight: 300;
 }
@@ -589,7 +596,7 @@ footer .useful-links h1 {
 
 footer .useful-links .links a {
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 23px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -658,6 +665,7 @@ footer .copyright h2 {
   background-attachment: fixed;
   width: 100%;
   overflow-x: hidden;
+  padding-top: 9.5rem !important;
 }
 
 .top-header h2 {
@@ -668,6 +676,7 @@ footer .copyright h2 {
 }
 
 .gallery-top-header {
+  padding-top: 11.5rem !important;
   background: linear-gradient(135deg, #0071a5bd -10%, #d8255ec5 75%), url(../img/gallery-banner-min.jpg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -686,6 +695,7 @@ footer .copyright h2 {
 }
 
 .cmt-top-header {
+  padding-top: 12rem !important;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../img/cmt-banner.jpg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -693,7 +703,7 @@ footer .copyright h2 {
   background-attachment: fixed;
   width: 100%;
   overflow-x: hidden;
-  padding: 8rem 0 !important;
+  padding-bottom: 8rem !important;
   font-family: "Poppins", sans-serif;
 }
 
@@ -705,6 +715,7 @@ footer .copyright h2 {
 }
 
 .notices-top-header {
+  padding-top: 11.5rem !important;
   background: linear-gradient(-135deg, #0071a5bd -10%, #d8255ec5 75%), url(../img/notices.jpg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -712,7 +723,7 @@ footer .copyright h2 {
   background-attachment: fixed;
   width: 100%;
   overflow-x: hidden;
-  padding: 8rem 0 !important;
+  padding-bottom: 8rem !important;
   font-family: "Poppins", sans-serif;
 }
 
@@ -858,6 +869,7 @@ footer .copyright h2 {
 
 /* ***** Contact ***** */
 .contact {
+  padding-top: 9rem;
   background: #f2f2f2;
 }
 
