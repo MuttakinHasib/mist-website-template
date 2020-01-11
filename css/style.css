@@ -35,7 +35,7 @@ body {
   width: 100%;
   padding: 0;
   background: #fff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif !important;
   font-weight: 400;
   /* // overflow-x: hidden; */
 }
@@ -79,6 +79,10 @@ body {
 }
 
 /* ***** Utilities ***** */
+.text-purple {
+  color: #af28b4 !important;
+}
+
 .table-responsive .row {
   padding: 1rem !important;
 }
@@ -195,6 +199,10 @@ table th {
   padding: 70px 0;
 }
 
+section {
+  padding: 3.5rem 0 !important;
+}
+
 .shadow-drop-2-center:hover {
   -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -263,7 +271,6 @@ p {
           font-feature-settings: "calt" 1;
   text-rendering: optimizeLegibility;
   white-space: nowrap;
-  word-break: break-all;
   display: table;
   font-weight: 500;
 }
@@ -289,7 +296,6 @@ p {
   -webkit-font-feature-settings: "calt" 1;
           font-feature-settings: "calt" 1;
   text-rendering: optimizeLegibility;
-  word-break: break-all;
 }
 
 .heading-secondary {
@@ -334,6 +340,10 @@ p {
 
 .bd-font-spacing {
   left: 1px;
+}
+
+.navbar-toggler {
+  border: none !important;
 }
 
 .heading-mid {
@@ -777,7 +787,6 @@ footer .copyright h2 {
           font-feature-settings: "calt" 1;
   text-rendering: optimizeLegibility;
   white-space: nowrap;
-  word-break: break-all;
   font-weight: 500;
   font-size: 14px;
   opacity: 0.8;
@@ -869,7 +878,7 @@ footer .copyright h2 {
 
 /* ***** Contact ***** */
 .contact {
-  padding-top: 9rem;
+  padding-top: 9rem !important;
   background: #f2f2f2;
 }
 
