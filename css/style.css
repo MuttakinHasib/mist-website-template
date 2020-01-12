@@ -51,9 +51,7 @@ body {
   z-index: 999;
   background: #f36;
   border-radius: 50%;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  display: none;
 }
 
 .scroll-bar .scroll-top {

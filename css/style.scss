@@ -72,9 +72,7 @@ body {
     z-index: 999;
     background: $color-pink;
     border-radius: 50%;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    display: none;
 
     .scroll-top {
         display: inline-block;
