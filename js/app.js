@@ -3,13 +3,13 @@
 $(window).scroll(function() {
     var winScroll = $(this).scrollTop();
 
-    $(".cmt-top-header,.notices-top-header,.gallery-top-header").css({
-        // backgroundPositionY: "-" + Math.floor((winScroll / 1.5) * 2) + "px"
-        backgroundPositionY: Math.floor(winScroll / 10) + "px"
-    });
-    $(".top-header").css({
-        backgroundPositionY: Math.floor(winScroll / 10) + "px"
-    });
+    // $(".cmt-top-header,.notices-top-header,.gallery-top-header").css({
+    //     // backgroundPositionY: "-" + Math.floor((winScroll / 1.5) * 2) + "px"
+    //     backgroundPositionY: Math.floor(winScroll / 10) + "px"
+    // });
+    // $(".top-header").css({
+    //     backgroundPositionY: Math.floor(winScroll / 10) + "px"
+    // });
 
     // Scroll Top Bar
 

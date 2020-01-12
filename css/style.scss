@@ -99,9 +99,10 @@ body {
 }
 
 /* ***** Utilities ***** */
-.text-purple{
+.text-purple {
     color: #af28b4 !important;
 }
+
 .table-responsive {
     .row {
         padding: 1rem !important;
@@ -362,9 +363,11 @@ p {
 .bd-font-spacing {
     left: 1px;
 }
-.navbar-toggler{
+
+.navbar-toggler {
     border: none !important;
 }
+
 .heading-mid {
     display: inline-block;
     font-size: 30px;
@@ -577,7 +580,8 @@ header {
 
 footer {
     // background: #2D3E50;
-    background: #2a2a2e;
+    // background: #2a2a2e;
+    background-color: #11102F;
 
     // color: rgba(255, 255, 255, 0.3) !important;
     h1 {
@@ -719,15 +723,16 @@ footer {
   }
 } */
 .top-header {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
-        url(../img/sea.jpg);
+    // background: linear-gradient(135deg, #F15F73 0%, #1C233C 50%),
+    //     url(../img/land-img.png);
+    background-color: #1C233C;
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
     overflow-x: hidden;
-    padding-top: 9.5rem !important;
+    padding-top: 8rem !important;
 
     h2 {
         display: inline-block;
@@ -849,7 +854,7 @@ footer {
             font-feature-settings: "calt"1;
             text-rendering: optimizeLegibility;
             white-space: nowrap;
-            
+
             font-weight: 500;
             font-size: 14px;
             opacity: 0.8;

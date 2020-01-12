@@ -539,7 +539,7 @@ header {
 
 /* ***** Footer Section ***** */
 footer {
-  background: #2a2a2e;
+  background-color: #11102F;
 }
 
 footer h1 {
@@ -668,14 +668,14 @@ footer .copyright h2 {
   }
 } */
 .top-header {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../img/sea.jpg);
+  background-color: #1C233C;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
   overflow-x: hidden;
-  padding-top: 9.5rem !important;
+  padding-top: 8rem !important;
 }
 
 .top-header h2 {
